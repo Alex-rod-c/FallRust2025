@@ -1,33 +1,15 @@
-fn modify_clone(s: &String) -> String{
-    let mut cloned = s.clone();
-    cloned.push_str("world!");
-    cloned
+fn sun(total: &mut i32, low: i32, high: i32){
+    *total_sum = 0;
+    for i in low..=high{
+        *total_sum += i;
+    }
 }
 
-fn main(){
-    let s = String::from("Hello, ");
-    let modified = modify_clone(&s);
-    println!("Orginal: {}", s);
-    println!("Modified: {}", modified);
-}
-
-
-
-/*fn con_string(s1: &String, s2: &String) -> String
+fn main()
 {
-    let mut result = String::new();
-    result.push_str(s1);
-    result.push_str(s2);
-    result
+    let mup total_sum = 0
+    sum(&mut total_sum, 0, 100);
+    println!("Total sum from 0 to 100 is: {}", total_sum)
 }
 
-
-
-fn main() {
-    let s1 = String::from("Hello, ");
-    let s2 = String::from("world!");
-    let result = con_string(&s1, &s2);
-    println!("{}", result);
- }
-\*
 
