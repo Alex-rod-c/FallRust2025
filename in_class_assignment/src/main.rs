@@ -23,7 +23,7 @@ impl Student {
 }
 
 fn main(){
-    let mut student1 = student::new("Alex", "Computer Engineering");
+    let mut student1 = Student::new("Alex", "Computer Engineering");
 
     println!("{}'s major is: {}", student1.name, student1.get_major());
 
